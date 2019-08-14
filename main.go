@@ -45,7 +45,7 @@ func main() {
 	res, err := http.Get(url)
 
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
 	}
 
 	defer res.Body.Close()
