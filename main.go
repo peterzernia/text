@@ -33,6 +33,11 @@ func main() {
 		recipient = me
 	} else {
 		recipient = os.Getenv("TEXT_" + strings.ToUpper(args[0]))
+
+		if recipient == "" {
+			fmt.Println("Unknown recipient")
+			os.Exit(3)
+		}
 	}
 
 	url := "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + recipient + "&parse_mode=Markdown&text=" + args[1]
