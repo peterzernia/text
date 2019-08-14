@@ -26,5 +26,5 @@ wait-on https://news.ycombinator.com/ && text me 'internet is back'
 - Set `TEXT_BOT_TOKEN=<your_bot_token>` and `TEXT_ME=<your_chat_id>` in your ~/.bashrc, ~/.bash_profile, ~/.profile, etc
 - run `make build` and `make copy` to build and move the binary into /usr/local/bin
 
-Note: you can text other people/groups with the chat id specific to that user/group. Simply set the
-env variable TEXT_PERSON=other_chat_id> and run `text person 'hey'` where person is the username/group name
+Note: you can text other users/groups with the chat id specific to that user/group. Simply set the
+env variable `TEXT_USER=<other_chat_id>` and run `text user hey` where user is the username/group name
