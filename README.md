@@ -23,8 +23,8 @@ wait-on https://news.ycombinator.com/ && text me 'internet is back'
 - Create a new [telegram bot](https://core.telegram.org/bots#6-botfather)
 - Start a chat with your new bot
 - Get the [chat id](https://stackoverflow.com/a/32572159)
-- Set TEXT_BOT_TOKEN=<your bot token> && TEXT_ME=<your chat id>
+- Set `TEXT_BOT_TOKEN=<your_bot_token>` and `TEXT_ME=<your_chat_id>` in your ~/.bashrc, ~/.bash_profile, ~/.profile, etc
 - run `make build` and `make copy` to build and move the binary into /usr/local/bin
 
 Note: you can text other people/groups with the chat id specific to that user/group. Simply set the
-env variable TEXT_PERSON=<other chat id> and run `text person 'hey'` where person is the username/group name
+env variable TEXT_PERSON=other_chat_id> and run `text person 'hey'` where person is the username/group name
